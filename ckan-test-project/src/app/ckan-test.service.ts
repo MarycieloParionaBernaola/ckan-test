@@ -6,13 +6,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CkanTestService {
   private apiUrl = 'https://uatweb.iadb.links.com.au/api/3/action/datastore_search';
-
+  private API_KEY = 'CKAN_API_KEY';
   constructor(private http: HttpClient) {}
 
   testCkanApi() {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'CKAN_API_KEY'
+      'Authorization': `Basic ${this.API_KEY}`
     });
 
     const body = {

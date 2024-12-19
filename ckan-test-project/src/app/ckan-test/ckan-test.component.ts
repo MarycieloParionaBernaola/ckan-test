@@ -7,7 +7,7 @@ import { CkanTestService } from '../ckan-test.service';
   template: `
     <div>
       <h1>CKAN API Test</h1>
-      <button (click)="testApi()">Probar API CKAN</button>
+      <button (click)="testApi()">Click to test API</button>
     </div>
   `
 })
